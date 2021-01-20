@@ -1,0 +1,208 @@
+#ProfileBody{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: auto;
+    border: 5px solid black;
+    background: linear-gradient(135deg, white, silver , white, silver, white, silver, white, silver);
+    grid-template-areas: "Info FilesPlace"
+}
+#InfoPlace{
+    grid-area: Info;
+    border-right: 2.5px solid black;
+    display: grid;
+    grid-template-rows: 15vh 65vh 20vh;
+    grid-template-columns: 50vw;
+    grid-template-areas:"TheTitleOfInfo"
+                        "TheInfos"
+                        "ProfileButtons"
+}
+#Files{
+    grid-area: Files;
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+}
+.FileUnity{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    position: relative;
+    width: 95.5%;
+    height: auto;
+    border: 2px solid black;
+    font-family: goldman;
+    overflow-wrap: break-word;
+}
+.RedButton{
+    background-color: red;
+    border: 2px solid red;
+    font-size: 2vw;
+    padding: 10%;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+.BlueButton{
+    background-color: blue;
+    outline: none;
+    border: 2px solid blue  ;
+    font-size: 2vw;
+    padding: 10%;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+}
+.GreenButton{
+    background-color: green;
+    outline: none;
+    border: 2px solid green  ;
+    font-size: 2vw;
+    padding: 10%;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+}
+.FileAction{
+    position: relative;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.FileInfo{
+    position: relative;
+    width: 50%;
+}
+.ButtonsOfProfile{
+    padding: 25%;
+    background:none;
+    border: 2px solid black;
+    font-size: 1.5vw;
+    font-family: goldman;
+    min-width: 100px;
+    cursor: pointer;
+}
+.ButtonsOfProfile:hover{
+    border: 2px solid blue;
+    color: blue;
+
+}
+#ProfileButtons{
+    grid-area: ProfileButtons;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#TheInfoTitle{
+    grid-area: TheTitleOfInfo;
+    display: flex;
+    border-right: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+#FilesPlace{
+    grid-area: FilesPlace;
+    display: grid;
+    border-left: 2.5px solid black;
+    grid-template-rows: 15vh 85vh;
+    grid-template-columns: 50vw;
+    grid-template-areas:"TheFilesTitle"
+                        "Files"
+}
+#TheFilesTitle{
+    grid-area:TheFilesTitle ;
+    border-bottom: 2.5px solid black;
+    display: flex;
+    font-size: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+#TheInfos{
+    grid-area: TheInfos;
+    font-family: goldman;
+    display: flex;
+    padding-left: 15px;
+    flex-direction: column;
+
+}
+#AlignInfo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+@media screen and (max-width:1000px){
+    body{
+        overflow: scroll;
+
+    }
+    #ProfileBody{
+        grid-template-columns: 100vw;
+        grid-template-rows: 100vh auto;
+        grid-template-areas: "Info"
+                            "FilesPlace"
+    }  
+    #InfoPlace{
+        grid-area: Info;
+        border-right: 2.5px solid black;
+        display: grid;
+        grid-template-rows: 15vh 65vh 20vh;
+        grid-template-columns: 100vw;
+        grid-template-areas:"TheTitleOfInfo"
+                            "TheInfos"
+                            "ProfileButtons"
+    }    
+    #AlignInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    } 
+    #FilesPlace{
+        grid-area: FilesPlace;
+        display: grid;
+        border-left: 2.5px solid black;
+        grid-template-rows: 15vh auto;
+        grid-template-columns: 100vw;
+        grid-template-areas:"TheFilesTitle"
+                            "Files"
+    }
+    #TheFilesTitle{
+        grid-area:TheFilesTitle ;
+        border: 2.5px solid black;
+        display: flex;
+        width: 96%;
+        font-size: 2.5vw;
+        justify-content: center;
+        align-items: center;
+    }
+    #TheInfoTitle{
+        font-size: 3.5vw;
+    }
+    .FileUnity{
+        width: 96%;
+    }
+    #Files{
+        width: 96%;
+    }
+    #TheInfoTitle{
+        width: 96.3%;
+    } 
+    .ButtonsOfProfile{
+        font-size: 3vw;
+    }  
+    .RedButton{
+        font-size: 5vw;
+    }
+   .BlueButton{
+       font-size: 5vw;
+   }
+}

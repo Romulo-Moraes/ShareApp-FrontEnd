@@ -1,0 +1,323 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    
+}
+#WithAccountPlace{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#LoginTitle{
+    grid-area: LoginTitle;
+    width: 273px;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+#LoginBody{
+    grid-area: LoginBody;
+    width: 262px;
+    padding: 2%;
+    border: 1px solid black;
+
+}
+#LoginButtons{
+    grid-area:LoginButtons;
+    width: 273px;
+    display: flex;
+    border: 1px solid black;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    justify-content: space-around;
+    align-items: center;
+}
+#WithAccount{
+    display: grid;
+    border-radius: 12px;
+    width: 273px;
+    height: 300px;
+    background-color: #9DBCD4;
+    grid-template-rows: 10vh auto auto;
+    grid-template-columns: 20vw;
+    grid-template-areas: "LoginTitle"
+                         "LoginBody"
+                         "LoginButtons"
+}
+#SecurityImage{
+    width: 170px;
+}
+#MessagePlace{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CreateAccountBody{
+    grid-area: AccountBody;
+    padding: 10%;
+    border: 1px solid black;
+    background-color: #9DBCD4;
+    
+}
+#CreateAccountButtons{
+    grid-area: AccountButtons;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 5%;
+    background-color: #9DBCD4;
+}
+#CreateAccountTitle{
+    grid-area: AccountTitle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-top-left-radius: 12px;
+    background-color: #9DBCD4;
+    border-top-right-radius: 12px;
+}
+label{
+    font-size: 200%;
+}
+#CreateAccount{
+    position: absolute;
+
+    width:20% ;
+    min-width: 274px;
+    max-width: 274px;
+    height: auto;
+    z-index: 3;
+    border-radius: 12px;
+    position: relative;
+    display: none;
+    grid-template-rows: 10vh auto auto;
+    grid-template-columns: 41.6vh;
+    grid-template-areas:"AccountTitle"
+                        "AccountBody"
+                        "AccountButtons"
+}
+#CloudIcon{
+    display: none;
+}
+#AccountPlace{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#MessageOfStart{
+    position: relative;
+    background-color: #9DBCD4;
+    height:300px;
+    width: 273px;
+    font-size: 18px;
+    z-index: 2;
+    border-radius: 12px;
+    display: none;
+    grid-template-rows: 10vh auto auto;
+    grid-template-columns: 41.6vh;
+    grid-template-areas:"TitleOfStart"
+                        "BodyOfStart"
+                        "ButtonsOfStart"
+}
+#TitleOfMessageStart{
+    border-top-left-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    border-top-right-radius: 12px;
+    grid-area: TitleOfStart;
+    border: 1px solid black;
+    background-color: #9DBCD4;
+    width: 273px;
+}
+#ButtonsOfMessageStart{
+    grid-area: ButtonsOfStart;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    padding: 5%;
+    border: 1px solid black;
+    border-bottom-left-radius: 12px;
+    width: 273px;
+    border-bottom-right-radius: 12px;
+    background-color: #9DBCD4;
+}
+#BodyOfMessageStart{
+    border: 1px solid black;
+    grid-area: BodyOfStart; 
+    text-align: center;
+    background-color: #9DBCD4;
+    padding: 5%;
+    width: 273px;
+}
+.ToAlign{
+    position: relative;
+}
+#LandingIconMini{
+    grid-area: LandingIconMini;
+    display: flex;
+    justify-content: center;
+}
+.alignImage{
+    position: relative;
+}
+#LandingPage{
+    font-family: goldman;
+    background-color: #048243;
+    display: grid;
+    grid-template-rows: 50vh 10vh 40vh;
+    grid-template-columns: 30vw 70vw;
+    grid-template-areas:"LandingIcon LandingMessage"
+                        ". ."
+                        "LadingButtons LadingButtons"
+
+}
+#LandingIcon{
+    grid-area: LandingIcon;
+}
+#LandingMessage{
+    grid-area: LandingMessage;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#MessageTitle{
+    font-size: 8vw;
+    letter-spacing: 2vw;
+    line-height: 10px;
+
+}
+#MessageBody{
+    font-size: 3vw;
+    transform: translateY(-15%);
+    text-align: center;
+    letter-spacing: 1vw;
+}
+.MessageHelper{
+}
+#LandingButtonsDad{
+    grid-area: LadingButtons;
+    background-color: #048243;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.ButtonsHelpers{
+    position: relative;
+}
+.LandingButtonsChildren{
+    font-size: 3vw;
+    border: 3px solid silver;
+    font-family: goldman;
+    cursor: pointer;
+
+}
+
+
+@media screen and (min-width:1536px){
+    #CloudIcon{
+        display: none;
+    }
+    #MessageBody{
+        font-size: 3.5vw;
+        transform: translateY(-15%);
+        text-align: center;
+        letter-spacing: 1vw;
+    }
+    #MessageTitle{
+        font-size: 9vw;
+    
+    }
+    .LandingButtonsChildren{
+        font-size: 4.5vw;
+        border: 3px solid silver;
+        font-family: goldman;
+        cursor: pointer;
+    
+    }
+    
+}
+
+@media screen and (max-width:1030px) and (min-height:600px){
+    
+    #LandingPage{
+        grid-template-rows: auto 32vh 35vh;
+        grid-template-columns: 35vw 65vw;
+        grid-template-areas:"LandingMessage LandingMessage"
+                            "CloudIcon CloudIcon"
+                            "LadingButtons LadingButtons"
+    }
+    #CloudIcon{
+        grid-area: CloudIcon;
+        display: flex;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        
+    }
+    #MessageBody{
+        font-size: 7vw;
+        transform: translateY(-15%);
+        text-align: center;
+        letter-spacing: 1vw;
+    }
+
+    #MessageTitle{
+        font-size: 12vw;
+    
+    }
+    .LandingButtonsChildren{
+        font-size: 7vw;
+        border: 3px solid silver;
+        font-family: goldman;
+        cursor: pointer;
+    
+    }
+}
+
+
+@media screen and (max-width:1030px) and (max-height:600px){
+   #CloudIcon{
+       display: none;
+   }
+}
+@media screen and (min-width:1098px) and (min-height:786px){
+    #MessageTitle{
+        font-size: 10vw;
+    }
+    #MessageBody{
+        font-size: 5vw;
+    }
+}
+@media screen and (min-width:1734px) and (min-height:1050px){
+    #MessageTitle{
+        font-size: 1vw;
+    }
+}
